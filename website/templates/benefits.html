@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VitaPlus | Key Ingredients & Benefits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h2 class="logo">VitaPlus</h2>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'benefits' %}">Benefits</a>
+        <a href="{% url 'ingredients' %}">Ingredients</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Key Ingredients & Benefits</h1>
+    <p>Our formula is carefully designed to support your health every day</p>
+</section>
+
+<!-- BENEFITS SECTION -->
+<section class="section">
+    <h2>Why Our Ingredients Matter</h2>
+    <ul class="benefits-list">
+        <li><strong>Vitamin C:</strong> Boosts immunity and supports skin health</li>
+        <li><strong>Zinc:</strong> Enhances immune function and metabolism</li>
+        <li><strong>Magnesium:</strong> Supports muscle and nerve health</li>
+        <li><strong>B-Complex:</strong> Helps convert food into energy and supports brain health</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+    <h2>Get in Touch</h2>
+    <p>Email: info@vitaplus.com</p>
+    <p>Phone: +254 700 000 000</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 VitaPlus. All rights reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="{% static 'css/js/main.js' %}"></script>
+</body>
+</html>
